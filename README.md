@@ -23,8 +23,8 @@ This approach is scalable and can be adapted for larger datasets, showcasing eff
 ## Installation:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/project-name.git
-   cd project-name
+   git clone https://github.com/ErfanNahidi/Big-Data-Ingestion-and-Processing-with-Multiprocessing.git
+   cd Big-Data-Ingestion-and-Processing-with-Multiprocessing
    ```
 
 2. Install the required dependencies:
