@@ -34,23 +34,22 @@ Session = sessionmaker(bind=engine)
 Generator = faker_input_v2.StreamFastGenerator()
 
 def insert_data_to_db(chunk_size):
-    session = Session()
-    batch_size = 500  # Insert data in batches
+    session = Session() 
+    batch_size = 500 
     for i in range(chunk_size):
-        gen_data = Generator.generate_data(num_records=1)[0]  # Now it correctly gets the first item from the list
+        gen_data = Generator.generate_data(num_records=1)[0]
         data = OnlineMarket(**gen_data)
 
         try:
             session.add(data)
 
-            # Commit after each batch
             if (i + 1) % batch_size == 0 or (i + 1) == chunk_size:
                 session.commit()
 
         except Exception as e:
             session.rollback()
             print(f"Error occurred: {e}")
-    session.close()
+    session.close() 
 
 def generate_and_insert_data(data_count):
     chunk_size = data_count // 8
