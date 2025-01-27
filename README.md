@@ -54,7 +54,7 @@ The following test was conducted to measure the performance of the data insertio
 - **Database**: MySQL (local)
 
 **Test Result:**
-- **Time to insert 1,000,000 records**: 69.43 seconds
+- **Time to insert 1,000,000 records**: 69.43 seconds (Intel core i7 gen 3)
 
 This performance is considered highly efficient, leveraging Python's multiprocessing capabilities to split the workload across multiple CPU cores.
 
