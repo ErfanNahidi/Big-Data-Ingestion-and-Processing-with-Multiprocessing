@@ -25,7 +25,7 @@ class OnlineMarket(Base):
         return f"<Customer(c_id={self.c_id}, first_name={self.first_name}, last_name={self.last_name})>"
 
 # Set up a pool of database connections for concurrency
-engine = create_engine("mysql+pymysql://root:620.360@localhost/OnlineMarket", 
+engine = create_engine("mysql+pymysql://username:pass@address/OnlineMarket", 
                        echo=True, poolclass=QueuePool, pool_size=10, max_overflow=20)
 
 Base.metadata.create_all(engine)
