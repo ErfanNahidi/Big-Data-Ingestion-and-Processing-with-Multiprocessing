@@ -1,4 +1,4 @@
-
+# Big Data Ingestion and Processing with Multiprocessing
 ## Description:
 This project demonstrates the ingestion and processing of large-scale synthetic data into a relational database using SQLAlchemy and multiprocessing in Python. The system is designed to simulate data generation using the Faker library, followed by parallelized insertion into a MySQL database. The project leverages Python's multiprocessing library to speed up the process of inserting millions of records by distributing the workload across multiple CPU cores.
 
